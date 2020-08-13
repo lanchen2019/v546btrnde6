@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="google-site-verification" content="ftFOlJETX-2KNjaPh8W6s8lhigItRuu9fOmjHZZ0nY0" />
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>Multi-Feature Super-Resolution Network for Cloth Wrinkle Synthesis</title>
+</head>
+<style type="text/css">
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  audio {
+    width: 100%;
+  }
+
+  thead>tr>th:first-child {
+    width: 96px;
+  }
+
+  @media (max-width: 767px) {
+    .big-screen {
+      display: none;
+    }
+  }
+
+  @media (min-width: 767px) {
+    .small-screen {
+      display: none;
+    }
+  }
+</style>
+
+<body>
+  <header class="header">
+    <div class="jumbotron bg-secondary text-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-12">
+            <h1><a class="text-light">
+				Multi-Feature Super-Resolution Network for Cloth Wrinkle Synthesis </a></h1>
+            <p>
+              <div class="row">
+                <div class="col-md col-sm-12"><a class="text-light">Lan Chen<sup>1,2</sup>, Juntao Ye<sup>1</sup>, Xiaopeng Zhang<sup>1</sup></a> </div>
+              </div>
+            </p>
+			<p><a class="text-light"><sup>1</sup>Institute of Automation, Chinese Academy of Sciences, Beijing, China<br>
+                <sup>2</sup>University of Chinese Academy of Sciences, Beijing, China<br>
+				</p></a>
+				
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row" id="average">
+        <div class="col">
+          <h2>Proposed Method</h2>
+          <div>
+			<font size="5">
+            <p>
+           Existing physical cloth simulators suffer from expensive computation and difficulties in tuning mechanical parameters to get desired
+wrinkling behaviors. Data-driven methods provide an alternative solution. It typically synthesizes cloth animation at a much lower
+computational cost, and also creates wrinkling effects that highly resemble the much controllable training data. In this paper we
+propose a deep learning based method for synthesizing cloth animation with high resolution meshes. To do this we first create
+a dataset for training: a pair of low and high resolution meshes are simulated and their motions are synchronized. As a result
+the two meshes exhibit similar large-scale deformation but different small wrinkles. Each simulated mesh pair are then converted
+into a pair of low and high resolution “images” (a 2D array of samples), with each image pixel being interpreted as any of
+three features: the displacement, the normal and the velocity. With these image pairs, we design a multi-feature super-resolution
+(MFSR) network that jointly train an upsampling synthesizer for the three features. The MFSR architecture consists of two key
+components: a sharing module that takes multiple features as input to learn low-level representations from corresponding superresolution tasks simultaneously; and task-specific modules focusing on various high-level semantics. Frame-to-frame consistency
+is well maintained thanks to the proposed kinematics-based loss function. Our method achieves realistic results at high frame rates:
+12−14 times faster than traditional physical simulation. We demonstrate the performance of our method with various experimental
+scenes, including a dressed character with sophisticated collisions.
+            </p>
+			</font>
+			<div align="center">
+				<video width="960" controls>
+				  <source src="papers/pg2020_supple_MFSR.mp4" type="video/mp4">
+				</video>
+			</div>
+            
+			
+          </div>
+        </div>
+      </div>
+    </div>
+	</br>
+	</br>
+	</br>
+	</br>
+</body>
+
+</html>
